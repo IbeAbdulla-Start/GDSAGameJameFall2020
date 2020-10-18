@@ -1200,7 +1200,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: mission 1
-    clip: {fileID: 8300000, guid: e32907aa32c5ba14a8b348aa61891c77, type: 3}
+    clip: {fileID: 8300000, guid: 3331eb68919402441b48c6c3c398e22a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -1210,6 +1210,42 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: mission 2
+    clip: {fileID: 8300000, guid: 051137477fdff1740b5c76c3f31c9eaf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mission 3
+    clip: {fileID: 8300000, guid: 02846f18497bfb644a701b64d51be7b7, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mission 4
+    clip: {fileID: 8300000, guid: 899b83b7707f7cf4581a636958c1c892, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mission 5
+    clip: {fileID: 8300000, guid: 6dcb85c5b4675ec468143047ce9efc7b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: mission 6
+    clip: {fileID: 8300000, guid: e4f96bbef66b2e74f966e2772582ebf4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: End
+    clip: {fileID: 8300000, guid: 4d26a619c17c84b458c939357a7a63a9, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!20 &519420031
 Camera:
@@ -1566,7 +1602,7 @@ GameObject:
   - component: {fileID: 742642520}
   m_Layer: 0
   m_Name: end
-  m_TagString: missson5
+  m_TagString: end
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4178,8 +4214,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
-    newSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 1.26, y: 1.26}
+    newSize: {x: 1.26, y: 1.26}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
