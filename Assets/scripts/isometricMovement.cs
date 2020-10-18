@@ -8,6 +8,8 @@ public class isometricMovement : MonoBehaviour
 
     public Animator animator;
     public GameObject SHHHHNOTSUS;
+    public AudioManager audiostop;
+    
 
     public float moveSpeed = 10f;
     public Rigidbody2D rigid;
@@ -48,10 +50,14 @@ public class isometricMovement : MonoBehaviour
             Destroy(other.gameObject);
             GameObject missionT = SHHHHNOTSUS.transform.Find("missionT2").gameObject;
             missionT.SetActive(true);
+            
+            
         }
 
        else if (other.gameObject.CompareTag("mission2"))
         {
+            
+            audiostop.Stop("mission 1");
             FindObjectOfType<AudioManager>().Play("mission 2");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item2").gameObject;
@@ -70,6 +76,7 @@ public class isometricMovement : MonoBehaviour
 
        else if (other.gameObject.CompareTag("mission3"))
         {
+            audiostop.Stop("mission 2");
             FindObjectOfType<AudioManager>().Play("mission 3");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item3").gameObject;
@@ -86,6 +93,7 @@ public class isometricMovement : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("mission4"))
         {
+            audiostop.Stop("mission 3");
             FindObjectOfType<AudioManager>().Play("mission 4");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item4").gameObject;
@@ -101,6 +109,7 @@ public class isometricMovement : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("mission5"))
         {
+            audiostop.Stop("mission 4");
             FindObjectOfType<AudioManager>().Play("mission 5");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item5").gameObject;
@@ -116,6 +125,7 @@ public class isometricMovement : MonoBehaviour
         }
         if (other.gameObject.CompareTag("mission6"))
         {
+            audiostop.Stop("mission 5");
             FindObjectOfType<AudioManager>().Play("mission 6");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item6").gameObject;
@@ -131,6 +141,7 @@ public class isometricMovement : MonoBehaviour
         }
         if (other.gameObject.CompareTag("end"))
         {
+            audiostop.Stop("mission 6");
             FindObjectOfType<AudioManager>().Play("End");
             Destroy(other.gameObject);
 

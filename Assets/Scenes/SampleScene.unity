@@ -1164,6 +1164,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420034}
   - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
@@ -1204,12 +1205,6 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     loop: 0
-    source: {fileID: 0}
-  - name: theme
-    clip: {fileID: 8300000, guid: 8dd2778f92c67a24f9cd80ad303f13ed, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 1
     source: {fileID: 0}
   - name: mission 2
     clip: {fileID: 8300000, guid: 051137477fdff1740b5c76c3f31c9eaf, type: 3}
@@ -1338,6 +1333,31 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b18c41ccc402b9d4e911ed3d3270bf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundh:
+  - name: theme
+    clip: {fileID: 8300000, guid: 8dd2778f92c67a24f9cd80ad303f13ed, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: FindMe
+    clip: {fileID: 8300000, guid: 3bc9ebf032a14664ebac1d6179c3cbce, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &522423861
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,6 +5442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1805500641}
   SHHHHNOTSUS: {fileID: 263682232}
+  audiostop: {fileID: 519420030}
   moveSpeed: 3
   rigid: {fileID: 1805500639}
 --- !u!95 &1805500641
