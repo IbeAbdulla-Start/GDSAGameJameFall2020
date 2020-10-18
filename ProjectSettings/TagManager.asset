@@ -11,8 +11,13 @@ TagManager:
   - mission4
   - mission5
   - Item1
-  - missson5
   - mission6
+  - end
+  - Item2
+  - Item3
+  - Item4
+  - Item5
+  - Item6
   layers:
   - Default
   - TransparentFX

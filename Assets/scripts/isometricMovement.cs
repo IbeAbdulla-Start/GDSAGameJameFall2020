@@ -29,11 +29,6 @@ public class isometricMovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("pickup"))
-        {
-            FindObjectOfType<AudioManager>().Play("pickup");
-            Destroy(other.gameObject);
-        }
 
         if (other.gameObject.CompareTag("mission1"))
         {
@@ -41,87 +36,96 @@ public class isometricMovement : MonoBehaviour
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item1").gameObject;
             item.SetActive(true);
-            if (other.gameObject.CompareTag("pickup"))
-            {
-                FindObjectOfType<AudioManager>().Play("pickup");
-                Destroy(other.gameObject);
-                GameObject missionT = SHHHHNOTSUS.transform.Find("missionT2").gameObject;
-                missionT.SetActive(true);
-            }
+            
         }
 
-        if (other.gameObject.CompareTag("mission2"))
+       else if (other.gameObject.CompareTag("Item1"))
         {
-            FindObjectOfType<AudioManager>().Play("mission 2");
+            FindObjectOfType<AudioManager>().Play("pickup");
+            Destroy(other.gameObject);
+            GameObject missionT = SHHHHNOTSUS.transform.Find("missionT2").gameObject;
+            missionT.SetActive(true);
+        }
+
+       else if (other.gameObject.CompareTag("mission2"))
+        {
+            FindObjectOfType<AudioManager>().Play("mission 1");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item2").gameObject;
             item.SetActive(true);
-            if (other.gameObject.CompareTag("pickup"))
-            {
-                FindObjectOfType<AudioManager>().Play("pickup");
-                Destroy(other.gameObject);
-                GameObject missionT = SHHHHNOTSUS.transform.Find("missionT3").gameObject;
-                missionT.SetActive(true);
-            }
+            
         }
-        if (other.gameObject.CompareTag("mission3"))
+
+       else if (other.gameObject.CompareTag("Item2"))
         {
-            FindObjectOfType<AudioManager>().Play("mission 3");
+            FindObjectOfType<AudioManager>().Play("pickup");
+            Destroy(other.gameObject);
+            GameObject missionT = SHHHHNOTSUS.transform.Find("missionT3").gameObject;
+            missionT.SetActive(true);
+        }
+
+
+       else if (other.gameObject.CompareTag("mission3"))
+        {
+            FindObjectOfType<AudioManager>().Play("mission 1");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item3").gameObject;
             item.SetActive(true);
-            if (other.gameObject.CompareTag("pickup"))
-            {
-                FindObjectOfType<AudioManager>().Play("pickup");
-                Destroy(other.gameObject);
-                GameObject missionT = SHHHHNOTSUS.transform.Find("missionT4").gameObject;
-                missionT.SetActive(true);
-            }
+            
         }
-        if (other.gameObject.CompareTag("mission4"))
+
+        else if (other.gameObject.CompareTag("Item3"))
         {
-            FindObjectOfType<AudioManager>().Play("mission 4");
+            FindObjectOfType<AudioManager>().Play("pickup");
+            Destroy(other.gameObject);
+            GameObject missionT = SHHHHNOTSUS.transform.Find("missionT4").gameObject;
+            missionT.SetActive(true);
+        }
+        else if (other.gameObject.CompareTag("mission4"))
+        {
+            FindObjectOfType<AudioManager>().Play("mission 1");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item4").gameObject;
             item.SetActive(true);
-            if (other.gameObject.CompareTag("pickup"))
-            {
-                FindObjectOfType<AudioManager>().Play("pickup");
-                Destroy(other.gameObject);
-                GameObject missionT = SHHHHNOTSUS.transform.Find("missionT5").gameObject;
-                missionT.SetActive(true);
-            }
+            
         }
-        if (other.gameObject.CompareTag("mission5"))
+        else if (other.gameObject.CompareTag("Item4"))
         {
-            FindObjectOfType<AudioManager>().Play("mission 5");
+            FindObjectOfType<AudioManager>().Play("pickup");
+            Destroy(other.gameObject);
+            GameObject missionT = SHHHHNOTSUS.transform.Find("missionT5").gameObject;
+            missionT.SetActive(true);
+        }
+        else if (other.gameObject.CompareTag("mission5"))
+        {
+            FindObjectOfType<AudioManager>().Play("mission 1");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item5").gameObject;
             item.SetActive(true);
-            if (other.gameObject.CompareTag("pickup"))
-            {
-                FindObjectOfType<AudioManager>().Play("pickup");
-                Destroy(other.gameObject);
-                GameObject missionT = SHHHHNOTSUS.transform.Find("missionT6").gameObject;
-                missionT.SetActive(true);
-            }
+            
         }
-
+        if (other.gameObject.CompareTag("Item5"))
+        {
+            FindObjectOfType<AudioManager>().Play("pickup");
+            Destroy(other.gameObject);
+            GameObject missionT = SHHHHNOTSUS.transform.Find("missionT6").gameObject;
+            missionT.SetActive(true);
+        }
         if (other.gameObject.CompareTag("mission6"))
         {
-            FindObjectOfType<AudioManager>().Play("mission 6");
+            FindObjectOfType<AudioManager>().Play("mission 1");
             Destroy(other.gameObject);
             GameObject item = SHHHHNOTSUS.transform.Find("Item6").gameObject;
             item.SetActive(true);
-            if (other.gameObject.CompareTag("pickup"))
-            {
-                FindObjectOfType<AudioManager>().Play("pickup");
-                Destroy(other.gameObject);
-                GameObject missionT = SHHHHNOTSUS.transform.Find("end").gameObject;
-                missionT.SetActive(true);
-            }
+            
         }
-
+        if (other.gameObject.CompareTag("Item6"))
+        {
+            FindObjectOfType<AudioManager>().Play("pickup");
+            Destroy(other.gameObject);
+            GameObject missionT = SHHHHNOTSUS.transform.Find("end").gameObject;
+            missionT.SetActive(true);
+        }
         if (other.gameObject.CompareTag("end"))
         {
             FindObjectOfType<AudioManager>().Play("End");
