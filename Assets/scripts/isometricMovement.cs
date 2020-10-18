@@ -92,10 +92,43 @@ public class isometricMovement : MonoBehaviour
                 missionT.SetActive(true);
             }
         }
+        if (other.gameObject.CompareTag("mission5"))
+        {
+            FindObjectOfType<AudioManager>().Play("mission 5");
+            Destroy(other.gameObject);
+            GameObject item = SHHHHNOTSUS.transform.Find("Item5").gameObject;
+            item.SetActive(true);
+            if (other.gameObject.CompareTag("pickup"))
+            {
+                FindObjectOfType<AudioManager>().Play("pickup");
+                Destroy(other.gameObject);
+                GameObject missionT = SHHHHNOTSUS.transform.Find("missionT6").gameObject;
+                missionT.SetActive(true);
+            }
+        }
 
+        if (other.gameObject.CompareTag("mission6"))
+        {
+            FindObjectOfType<AudioManager>().Play("mission 6");
+            Destroy(other.gameObject);
+            GameObject item = SHHHHNOTSUS.transform.Find("Item6").gameObject;
+            item.SetActive(true);
+            if (other.gameObject.CompareTag("pickup"))
+            {
+                FindObjectOfType<AudioManager>().Play("pickup");
+                Destroy(other.gameObject);
+                GameObject missionT = SHHHHNOTSUS.transform.Find("end").gameObject;
+                missionT.SetActive(true);
+            }
+        }
 
+        if (other.gameObject.CompareTag("end"))
+        {
+            FindObjectOfType<AudioManager>().Play("End");
+            Destroy(other.gameObject);
+
+        }
 
     }
-
 }
 

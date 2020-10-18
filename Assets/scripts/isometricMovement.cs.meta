@@ -3,7 +3,11 @@ guid: 615bc6dc42cc5d64792c113f97e95ad1
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - animator: {instanceID: 0}
+  - SHHHHNOTSUS: {fileID: 6773010595337132559, guid: c7a4d362dd3a98741836a56460985f00,
+      type: 3}
+  - rigid: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

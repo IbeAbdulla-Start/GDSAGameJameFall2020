@@ -5,7 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - pickup
-  - mission
+  - mission1
+  - mission2
+  - mission3
+  - mission4
+  - mission5
+  - Item1
+  - missson5
+  - mission6
   layers:
   - Default
   - TransparentFX
