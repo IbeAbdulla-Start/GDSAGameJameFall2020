@@ -22,6 +22,8 @@ public class isometricMovement : MonoBehaviour
         animator.SetFloat("Speed", movement.x);
         animator.SetFloat("Speed Neg", -movement.x);
         movement.y = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("Up", movement.y);
+        animator.SetFloat("Down", -movement.y);
     }
 
     private void FixedUpdate() 
