@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class isometricMovement : MonoBehaviour
 {
@@ -144,7 +145,12 @@ public class isometricMovement : MonoBehaviour
             audiostop.Stop("mission 6");
             FindObjectOfType<AudioManager>().Play("End");
             Destroy(other.gameObject);
+            
 
+        }
+        if (other.gameObject.CompareTag("end") && !audiostop.Playing("End"))
+        {
+            SceneManager.LoadScene(0);
         }
 
     }
