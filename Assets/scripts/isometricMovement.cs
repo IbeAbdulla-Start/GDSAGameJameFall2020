@@ -20,6 +20,7 @@ public class isometricMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("Speed", movement.x);
+        animator.SetFloat("Speed Neg", -movement.x);
         movement.y = Input.GetAxisRaw("Vertical");
     }
 
